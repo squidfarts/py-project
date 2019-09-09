@@ -17,5 +17,5 @@ import subprocess
 
 
 subprocess.check_call(['pytest', join_paths('src', 'test', 'cases', 'test.py')])
-subprocess.check_call(['codecov', join_paths('src', 'main', 'module', 'main.py')])
-subprocess.check_call(['codecov', join_paths('src', 'test', 'cases', 'test.py')])
+subprocess.check_call(['codecov', 'run', join_paths('src', 'main', 'module', 'main.py')])
+subprocess.check_call(['codecov', 'run', join_paths('src', 'test', 'cases', 'test.py')])
