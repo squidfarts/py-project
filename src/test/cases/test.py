@@ -1,7 +1,7 @@
 #!/user/bin/env python3
 ###################################################################################
 #                                                                                 #
-# NAME: main.py                                                                    #
+# NAME: test.py                                                                   #
 #                                                                                 #
 # AUTHOR: Michael Brockus.                                                        #
 #                                                                                 #
@@ -12,7 +12,6 @@
 # License: Apache 2.0 :http://www.apache.org/licenses/LICENSE-2.0                 #
 #                                                                                 #
 ###################################################################################
-import pytest
 
 
 def test_case() -> None:
