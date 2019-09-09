@@ -13,10 +13,9 @@
 #                                                                                 #
 ###################################################################################
 from os.path import join as join_paths
-import subprocess, os
+import subprocess
 
 
 subprocess.check_call(['pytest', join_paths('src', 'test', 'cases', 'test.py')])
-
-os.chdir(join_paths('src', 'main', 'module'))
-subprocess.check_call(['codecov', 'run', 'main.py'])
+subprocess.check_call(['coverage', 'run', join_paths('src', 'main', 'module', 'main.py')])
+subprocess.check_call(['coverage', 'run', join_paths('src', 'test', 'cases', 'test.py')])
