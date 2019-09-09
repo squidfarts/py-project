@@ -12,14 +12,9 @@
 # License: Apache 2.0 :http://www.apache.org/licenses/LICENSE-2.0                 #
 #                                                                                 #
 ###################################################################################
-import sys
-import os
+import pytest
 
 
-def main(args):
-    print('Hello, Python.')
-    return 0
-# end of function main
-
-if __name__ == "__main__":
-    sys.exit(main(sys.argv))
+def test_case() -> None:
+    assert True
+# end of test case
